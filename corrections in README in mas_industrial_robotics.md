@@ -405,7 +405,7 @@ CMake Error at /home/ravi/Desktop/mas_simulation/src/mas_perception/mcr_backgrou
   with requested version "3".
 
 
-go to <src/mas_perception/mcr_background_change_detection/CMakeLists.txt> , </home/vivek/catkin_ws/src/mas_perception/mcr_leg_detection/CMakeLists.txt> file and change the 
+go to <src/mas_perception/mcr_background_change_detection/CMakeLists.txt> file and change the 
 line 13 from 
 find_package(OpenCV 3 REQUIRED) 
 to 
