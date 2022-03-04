@@ -351,15 +351,17 @@ Reference: [Mercury github repo](https://github.com/b-it-bots/mercury_planner)
 
 - For `python_orocos_kdl`, pull latest changes from the official git repo
 
-  1. Go to `catkin_ws/src/orocos_kinematics_dynamics/python_orocos_kdl`, then run
+  Go to `catkin_ws/src/orocos_kinematics_dynamics/python_orocos_kdl`, then run
 
       - `git remote add upstream https://github.com/orocos/orocos_kinematics_dynamics.git`
 
       - `git pull upstream master`
 
-      - go to `pybind11` directory, run `git submodule update --init --recursive`
+      - go to  `pybind11`  directory, run  `git submodule update --init --recursive`
 
       - Build the package, if error comes up then do `catkin clean` and build again
+
+      Hints: pybind11 can be found by doing -ls after `git pull upstream master`
 
 -----
 
@@ -386,7 +388,7 @@ OLD Errors
 
 ==========================================
 
-3. If you get this error msg
+1. If you get this error msg
 
 Error: There already is a workspace config file .rosinstall at "/home/ravi/Desktop/mas_simulation/src". Use wstool install/modify.
 
@@ -396,7 +398,7 @@ delete them and run the script again and it will work
 
 ----
 
-3. if you get an error msg like this :
+2. if you get an error msg like this :
 
 Copy "" mas industrial robotics "" to src
 cp: cannot create regular file '/home/ravi/Desktop/mas_simulation/src/mas_industrial_robotics/.git/objects/pack/pack-fd7f9937c2e75d92214f26e0f03272ce92b9ddf2.pack': Permission denied
@@ -407,7 +409,7 @@ in this case delete "mas industrial robotics" folder in src
 
 -----
 
-4. if you get this error msg:
+3. if you get this error msg:
 
 ERROR: the following packages/stacks could not have their rosdep keys resolved
 to system dependencies:
@@ -417,11 +419,11 @@ Just add plain "CATKIN_IGNORE" file without extention to the mir_atwork_commande
 
 -----
 
-5. if you get error related to lama_planner package then Just add plain "CATKIN_IGNORE" file without extention to src/lama_planner foler
+4. if you get error related to lama_planner package then Just add plain "CATKIN_IGNORE" file without extention to src/lama_planner foler
 
 ----
 
-6. if you ger this error :
+5. if you ger this error :
 
 CMake Error at /home/ravi/Desktop/mas_simulation/src/mas_perception/mcr_background_change_detection/CMakeLists.txt:13 (find_package):
   Could not find a configuration file for package "OpenCV" that is compatible
@@ -436,7 +438,7 @@ find_package(OpenCV REQUIRED)
 
 -----
 
-7. when you get an error like this :
+6. when you get an error like this :
 
 Errors     << mcr_image_filter:make /home/ravi/Desktop/mas_simulation/logs/mcr_image_filter/build.make.001.log
 In file included from /home/ravi/Desktop/mas_simulation/src/mas_perception/mcr_image_filter/ros/src/image_filter_node.cpp:1:
@@ -450,7 +452,7 @@ remove line 11 "#include <opencv/cv.h>" from the file below:
 
 -----
 
-8. if you get an error like this :
+7. if you get an error like this :
 
 In file included from /home/ravi/Desktop/mas_simulation/src/mas_perception/mcr_image_filter/ros/src/image_filter_node.cpp:1:
 /home/ravi/Desktop/mas_simulation/src/mas_perception/mcr_image_filter/ros/include/mcr_image_filter/image_filter_node.h:12:10: fatal error: opencv/highgui.h: No such file or directory
@@ -464,7 +466,7 @@ change line 12 "#include <opencv/highgui.h>" to "<opencv2/highgui.hpp>" from the
 
 -----
 
-9. For this error:
+8. For this error:
 
 CMake Error at /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:146 (message):
   Could NOT find Boost (missing: python) (found version "1.71.0")
@@ -476,7 +478,7 @@ Just add plain "CATKIN_IGNORE" file without extention to the below path
 
 -----
 
-10. error like this:
+9. error like this:
 
 CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
   Could not find a package configuration file provided by
