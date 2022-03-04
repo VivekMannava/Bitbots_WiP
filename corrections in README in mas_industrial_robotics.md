@@ -177,8 +177,8 @@ and change:
 
 # 6. 
 
-#### Erros: 
-to avoid cmake warnings
+#### Errors: 
+To avoid Cmake warnings
 #### Solution: 
 Reference: [Official ROS Noetic Migration webpage](http://wiki.ros.org/action/fullsearch/noetic/Migration?action=fullsearch&context=180&value=linkto%3A%22noetic%2FMigration%22)
 
@@ -215,6 +215,7 @@ Reference: [Link](https://programmerah.com/catkin_make-warninggazebo_libraries-i
 
 - Change in the files `catkin_ws/src/gazebo-pkgs/gazebo_grasp_plugin/CMakeLists.txt` and `catkin_ws/src/gazebo-pkgs/gazebo_version_helpers/CMakeLists.txt`, from `DEPENDS gazebo` to `DEPENDS GAZEBO`
 
+-----
 
 # 8.
 
@@ -228,10 +229,21 @@ error: #error PCL requires C++14 or above
 
 Reference: [Link](https://github.com/PointCloudLibrary/pcl/issues/2968)
 
-- In files,   
-`catkin_ws/src/mas_perception/mcr_pose_estimation/CMakeLists.txt`, `catkin_ws/src/mas_perception/mcr_contour_matching/CMakeLists.txt`, `catkin_ws/src/mas_perception/mcr_object_recognition_bounding_box/CMakeLists.txt` add line `set(CMAKE_CXX_STANDARD 14)` after `project(***)` line
+In files,   
+`catkin_ws/src/mas_perception/mcr_pose_estimation/CMakeLists.txt`, 
+`catkin_ws/src/mas_perception/mcr_contour_matching/CMakeLists.txt`, 
+`catkin_ws/src/mas_perception/mcr_object_recognition_bounding_box/CMakeLists.txt` 
 
-- In files `catkin_ws/src/mas_perception/mas_perception_libs/CMakeLists.txt`, and `catkin_ws/src/mas_industrial_robotics/mir_perception/mir_ppt_detection/CMakeLists.txt`, change C++ version, from `add_compile_options(-std=c++11)` to `add_compile_options(-std=c++14)`. In same file, change `find_package(Boost REQUIRED COMPONENTS python)` to `find_package(Boost REQUIRED COMPONENTS python38)`
+- Add line `set(CMAKE_CXX_STANDARD 14)` after `project(***)` line 
+
+In files 
+- `catkin_ws/src/mas_perception/mas_perception_libs/CMakeLists.txt`, 
+- `catkin_ws/src/mas_industrial_robotics/mir_perception/mir_ppt_detection/CMakeLists.txt`
+-  change C++ version, from `add_compile_options(-std=c++11)` to `add_compile_options(-std=c++14).
+
+-  In same file, change `find_package(Boost REQUIRED COMPONENTS python)` to `find_package(Boost REQUIRED COMPONENTS python38)`
+
+-----
 
 # 9. 
 
@@ -243,7 +255,13 @@ fatal error: opencv/cv.h: No such file or directory
 
 #### Solution:
 
-- In file `catkin_ws/src/mas_perception/ mas_perception_libs/common/src/bounding_box.cpp`, remove line `#include <opencv/cv.h>`
+In file `catkin_ws/src/mas_perception/ mas_perception_libs/common/src/bounding_box.cpp` 
+
+Remove line `#include <opencv/cv.h>`
+
+-----
+
+# 10.
 
 #### Errors:
 
@@ -261,12 +279,15 @@ error: ‘CV_BGR2GRAY’ was not declared in this scope
 
 Reference: [Link](https://stackoverflow.com/a/11604986/6920365)
 
-- In files `catkin_ws/src/mas_perception/mas_perception_libs/common/src/bounding_box.h`,  `catkin_ws/src/mas_perception/mcr_contour_matching/common/src/contour_finder.cpp`, `catkin_ws/src/mas_industrial_robotics/mir_perception/mir_cavity_detector/common/src/cavity_finder.cpp`, `catkin_ws/src/mas_perception/mcr_people_tracking/ros/src/waist_tracking_node.cpp`        
+In files 
+`catkin_ws/src/mas_perception/mas_perception_libs/common/src/bounding_box.h`, 
+`catkin_ws/src/mas_perception/mcr_contour_matching/common/src/contour_finder.cpp`, `catkin_ws/src/mas_industrial_robotics/mir_perception/mir_cavity_detector/common/src/cavity_finder.cpp`, `catkin_ws/src/mas_perception/mcr_people_tracking/ros/src/waist_tracking_node.cpp`        
 
-  add line `#include <opencv2/imgproc/imgproc_c.h>`
+ - Add line `#include <opencv2/imgproc/imgproc_c.h>`
 
+-----
 
-# 10.
+# 11.
 
 #### Errors:
 
@@ -335,12 +356,9 @@ Reference: [Mercury github repo](https://github.com/b-it-bots/mercury_planner)
 
       - Build the package, if error comes up then do `catkin clean` and build again
 
+-----
 
-
-
-
-
-# 11.
+# 12.
 
 #### Errors:
 
