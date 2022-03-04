@@ -29,3 +29,20 @@ In file included from /usr/include/pcl-1.10/pcl/pcl_macros.h:77,
 ## Solution
 
 Add line `set(CMAKE_CXX_STANDARD 14)` after the line `project()` in the file `noetic_catkin_ws/src/mas_industrial_robotics/mir_perception/mir_ppt_detection/CMakeLists.txt`
+
+# Error
+```
+CMake Error at /opt/ros/noetic/share/catkin/cmake/empy.cmake:30 (message):
+  Unable to find either executable 'empy' or Python module 'em'...  try
+  installing the package 'python3-empy'
+```
+## Solution
+- previous correction file
+
+# Error
+```CMake Error at /opt/ros/noetic/share/catkin/cmake/empy.cmake:30 (message):
+  Unable to find either executable 'empy' or Python module 'em'...  try
+  installing the package 'python3-empy'
+```
+## Solution
+previous correction file
