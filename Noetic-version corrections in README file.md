@@ -3,7 +3,7 @@
 mcr_perception_tools: Cannot locate rosdep definition for [mcr_object_recognition_bounding_box]
 ```
 ## Solution
-- Copy the mcr_object_recognition_bounding_box from this git branch (noetic files/mcr_object_recognition_bounding_box) and paste it in the noetic_catkin_ws/src/mas_perception/
+- Comment `<run_depend>mcr_object_recognition_bounding_box</run_depend>` in `/src/mas_perception/mcr_perception_tools/package.xml`
 
 # Error
 ```
