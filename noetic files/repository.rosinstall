@@ -1,0 +1,114 @@
+- git:
+    local-name: mas_common_robotics
+    uri: https://github.com/b-it-bots/mas_common_robotics.git
+    version: noetic
+
+- git:
+    local-name: youbot_driver
+    uri: https://github.com/mas-group/youbot_driver.git
+    version: indigo-devel
+
+- git:
+    local-name: brics_actuator
+    uri: https://github.com/wnowak/brics_actuator.git
+    version: master
+
+- git:
+    local-name: pr2_power_drivers
+    uri: https://github.com/PR2/pr2_power_drivers.git
+    version: kinetic-devel
+
+- git:
+    local-name: youbot_driver_ros_interface
+    uri: https://github.com/mas-group/youbot_driver_ros_interface.git
+    version: trajectory_controller_dirty_fix
+
+- git:
+    local-name: youbot_description
+    uri: https://github.com/mas-group/youbot_description.git
+    version: kinetic-devel
+
+- git:
+    local-name: youbot_simulation
+    uri: https://github.com/mas-group/youbot_simulation.git
+    version: noetic-devel
+
+- git:
+    local-name: youbot_diagnostics
+    uri: https://github.com/mas-group/youbot_diagnostics.git
+    version: indigo-devel
+
+- git:
+    local-name: youbot-manipulation
+    uri: https://github.com/mas-group/youbot-manipulation.git
+    version: kinetic
+
+- git:
+    local-name: dynamixel_motor
+    uri: https://github.com/mas-group/dynamixel_motor.git
+    version: noetic
+
+- git:
+    local-name: mas_navigation
+    uri: https://github.com/b-it-bots/mas_navigation.git
+    version: melodic
+
+- git:
+    local-name: mas_perception
+    uri: https://github.com/b-it-bots/mas_perception.git
+    version: noetic
+
+- git:
+    local-name: mas_perception_msgs
+    uri: https://github.com/b-it-bots/mas_perception_msgs.git
+    version: noetic
+
+- git:
+    local-name: ROSPlan
+    uri: https://github.com/b-it-bots/ROSPlan.git
+    version: master
+
+- git:
+    local-name: mercury_planner
+    uri: https://github.com/b-it-bots/mercury_planner.git
+    version: master
+
+- git:
+    local-name: lama_planner
+    uri: https://github.com/b-it-bots/lama_planner.git
+    version: noetic
+
+- git:
+    local-name: orocos_kinematics_dynamics
+    uri: https://github.com/b-it-bots/orocos_kinematics_dynamics.git
+    version: master
+
+- git:
+    local-name: kdl_parser
+    uri: https://github.com/ros/kdl_parser.git
+    version: noetic-devel
+
+- git:
+    local-name: dmp
+    uri: https://github.com/b-it-bots/dmp.git
+    version: master
+
+- git:
+    local-name: gazebo-pkgs
+    uri: https://github.com/b-it-bots/gazebo-pkgs.git
+    version: master
+    
+- git:
+    local-name: frontier_exploration
+    uri: https://github.com/paulbovbel/frontier_exploration.git
+    version: melodic-devel
+
+- git:
+    local-name: explore_lite
+    uri: https://github.com/hrnr/m-explore.git
+    version: noetic-devel
+
+- git:
+    local-name: atwork-commander
+    uri: https://github.com/robocup-at-work/atwork-commander.git
+    version: noetic
