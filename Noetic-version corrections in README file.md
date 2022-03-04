@@ -3,7 +3,7 @@
 mcr_perception_tools: Cannot locate rosdep definition for [mcr_object_recognition_bounding_box]
 ```
 ## Solution
-- Comment `<run_depend>mcr_object_recognition_bounding_box</run_depend>` in `/src/mas_perception/mcr_perception_tools/package.xml`
+- Comment `<run_depend>mcr_object_recognition_bounding_box</run_depend>` in `/src/mas_perception/mcr_perception_tools/package.xml` and also comment `mcr_object_recognition_bounding_box` in `/src/mas_perception/mcr_perception_tools/CMakeLists.txt`
 
 # Error
 ```
