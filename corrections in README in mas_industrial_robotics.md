@@ -339,7 +339,7 @@ Reference: [Mercury github repo](https://github.com/b-it-bots/mercury_planner)
 
   `sudo apt-get install bison flex gawk g++-multilib pypy`
 
-- For `mir_2dnav`, comment TEST cases in the test.cmake file in `/opt/ros/noetic/share/catkin/cmake/test/tests.cmake`,
+- For `mir_2dnav`, comment TEST cases in the CmakeList.txt file in `catkin_ws/src/mas_industrial_robotics/mir_navigation/mir_2dnav/CmakeLists.txt,
 ```
 # TESTS
 # if(CATKIN_ENABLE_TESTING)
