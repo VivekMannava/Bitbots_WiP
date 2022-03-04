@@ -229,19 +229,22 @@ error: #error PCL requires C++14 or above
 
 Reference: [Link](https://github.com/PointCloudLibrary/pcl/issues/2968)
 
-In files,   
+In files:   
 `catkin_ws/src/mas_perception/mcr_pose_estimation/CMakeLists.txt`, 
 `catkin_ws/src/mas_perception/mcr_contour_matching/CMakeLists.txt`, 
 `catkin_ws/src/mas_perception/mcr_object_recognition_bounding_box/CMakeLists.txt` 
 
 - Add line `set(CMAKE_CXX_STANDARD 14)` after `project(***)` line 
 
-In files 
+In files:
 - `catkin_ws/src/mas_perception/mas_perception_libs/CMakeLists.txt`, 
 - `catkin_ws/src/mas_industrial_robotics/mir_perception/mir_ppt_detection/CMakeLists.txt`
--  change C++ version, from `add_compile_options(-std=c++11)` to `add_compile_options(-std=c++14).
+-  Change C++ version, from `add_compile_options(-std=c++11)` to `add_compile_options(-std=c++14)`.
 
--  In same file, change `find_package(Boost REQUIRED COMPONENTS python)` to `find_package(Boost REQUIRED COMPONENTS python38)`
+In file:
+- `catkin_ws/src/mas_perception/mas_perception_libs/CMakeLists.txt`
+-  Change `find_package(Boost REQUIRED COMPONENTS python)` to `find_package(Boost REQUIRED COMPONENTS python38)` 
+- Hints : -->("It is not python 3.8, it is python38")
 
 -----
 
@@ -280,8 +283,10 @@ error: ‘CV_BGR2GRAY’ was not declared in this scope
 Reference: [Link](https://stackoverflow.com/a/11604986/6920365)
 
 In files 
-`catkin_ws/src/mas_perception/mas_perception_libs/common/src/bounding_box.h`, 
-`catkin_ws/src/mas_perception/mcr_contour_matching/common/src/contour_finder.cpp`, `catkin_ws/src/mas_industrial_robotics/mir_perception/mir_cavity_detector/common/src/cavity_finder.cpp`, `catkin_ws/src/mas_perception/mcr_people_tracking/ros/src/waist_tracking_node.cpp`        
+`catkin_ws/src/mas_perception/mas_perception_libs/common/src/bounding_box.cpp`, 
+`catkin_ws/src/mas_perception/mcr_contour_matching/common/src/contour_finder.cpp`, 
+`catkin_ws/src/mas_industrial_robotics/mir_perception/mir_cavity_detector/common/src/cavity_finder.cpp`, 
+`catkin_ws/src/mas_perception/mcr_people_tracking/ros/src/waist_tracking_node.cpp`        
 
  - Add line `#include <opencv2/imgproc/imgproc_c.h>`
 
@@ -334,7 +339,7 @@ Reference: [Mercury github repo](https://github.com/b-it-bots/mercury_planner)
 
   `sudo apt-get install bison flex gawk g++-multilib pypy`
 
-- For `mir_2dnav`, comment TEST cases,
+- For `mir_2dnav`, comment TEST cases in the test.cmake file in `/opt/ros/noetic/share/catkin/cmake/test/tests.cmake`,
 ```
 # TESTS
 # if(CATKIN_ENABLE_TESTING)
