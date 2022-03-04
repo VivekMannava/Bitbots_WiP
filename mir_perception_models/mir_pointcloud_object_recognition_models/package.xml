@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mir_pointcloud_object_recognition_models</name>
+  <version>0.1.0</version>
+  <description>The mir_pointcloud_object_recognition_model package</description>
+
+  <author email="mohammad.wasil@h-brs.de">Mohammad Wasil</author>
+  <maintainer email="mohammad.wasil@h-brs.de">Mohammad Wasil</maintainer>
+
+  <license>GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
