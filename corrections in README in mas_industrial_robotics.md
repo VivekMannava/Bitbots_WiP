@@ -359,9 +359,7 @@ Reference: [Mercury github repo](https://github.com/b-it-bots/mercury_planner)
 
       - go to  `pybind11`  directory, run  `git submodule update --init --recursive`
 
-      - Build the package, if error comes up then do `catkin clean` and build again
-
-      Hints: pybind11 can be found by doing -ls after `git pull upstream master`
+      - Build the package, if error comes up then go to  `catkin_ws/build` and delete `python_orocos_kdl` directory
 
 -----
 
