@@ -1,3 +1,4 @@
+1. FLAG = 1
 # Error
 ```
 mcr_perception_tools: Cannot locate rosdep definition for [mcr_object_recognition_bounding_box]
@@ -5,6 +6,7 @@ mcr_perception_tools: Cannot locate rosdep definition for [mcr_object_recognitio
 ## Solution
 - Comment `<run_depend>mcr_object_recognition_bounding_box</run_depend>` in `/src/mas_perception/mcr_perception_tools/package.xml` and also comment `mcr_object_recognition_bounding_box` in `/src/mas_perception/mcr_perception_tools/CMakeLists.txt`
 
+2. 
 # Error
 ```
 mir_object_recognition: Cannot locate rosdep definition for [mir_pointcloud_object_recognition_models] 
@@ -13,16 +15,7 @@ mir_object_recognition: Cannot locate rosdep definition for [mir_rgb_object_reco
 ## Solution
 - Copy the mir_perception_models folder from catkin_ws to the src folder of the new workspace
 
-# Error
-```
-noetic_catkin_ws/src/mas_industrial_robotics/mir_perception/mir_cavity_detector/common/src/cavity_finder.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > CavityFinder::recognize2DCavities(const cv::Mat&, cv::Mat&, std::vector<cv::Mat>&, const std::vector<cv::Point_<float> >&)’:
-/home/tharun/Desktop/temp/noetic_catkin_ws/src/mas_industrial_robotics/mir_perception/mir_cavity_detector/common/src/cavity_finder.cpp:84:43: error: ‘CV_BGR2GRAY’ was not declared in this scope
-   84 |     cv::cvtColor(small_image, gray_image, CV_BGR2GRAY);
-```
-## Solution
-- To the file `noetic_catkin_ws/src/mas_industrial_robotics/mir_perception/mir_cavity_detector/common/src/cavity_finder.cpp` Add line 
-`#include <opencv2/imgproc/imgproc_c.h>`
-
+3. FLAG = 1
 # Error
 ```
 In file included from /usr/include/pcl-1.10/pcl/pcl_macros.h:77,
@@ -36,8 +29,11 @@ In file included from /usr/include/pcl-1.10/pcl/pcl_macros.h:77,
 ```
 ## Solution
 
-Add line `set(CMAKE_CXX_STANDARD 14)` after the line `project()` in the file `noetic_catkin_ws/src/mas_industrial_robotics/mir_perception/mir_ppt_detection/CMakeLists.txt`
+- Change line number #4 to `add_compile_options(-std=c++14)`  in the file `catkin_ws/src/mas_industrial_robotics/mir_perception/mir_ppt_detection/CMakeLists.txt`
+- Change line number #1, cmake_minimum_required version from `2.8.3` to `3.0.2`
 
+
+4. 
 # Error
 ```
 CMake Error at /opt/ros/noetic/share/catkin/cmake/empy.cmake:30 (message):
@@ -46,7 +42,7 @@ CMake Error at /opt/ros/noetic/share/catkin/cmake/empy.cmake:30 (message):
 ```
 ## Solution
 - previous correction file
-
+5. 
 # Error
 ```CMake Error at /opt/ros/noetic/share/catkin/cmake/empy.cmake:30 (message):
   Unable to find either executable 'empy' or Python module 'em'...  try

@@ -1,4 +1,4 @@
-# 1. 
+# 1. FLAG = 1
 
 #### Errors: 
 
@@ -58,7 +58,7 @@ with these lines,
 <build_depend>liborocos-bfl</build_depend>
 ```
 
-- 2.2  
+- 2.2  FLAG = 1
 For rosplan_planning_com error -- modify the package.xml file in 
 `catkin_ws/src/ROSplan/ros_planning_system/package.xml` 
 
@@ -264,7 +264,7 @@ Remove line `#include <opencv/cv.h>`
 
 -----
 
-# 10.
+# 10. FLAG = 1
 
 #### Errors:
 
@@ -382,6 +382,15 @@ make: *** [Makefile:141: all] Error 2
 
 In file `catkin_ws/src/youbot_driver_ros_interface/CMakeLists.txt`, change line 44, `set(SUDO_COMMAND gksudo)`, to `set(SUDO_COMMAND pkexec)`
 
+13. 
+
+```
+make[3]: python: Command not found
+```
+
+#### Solution:
+
+In file `catkin_ws/src/youbot_driver_ros_interface/CMakeLists.txt`, change line 44, `set(SUDO_COMMAND gksudo)`, to `set(SUDO_COMMAND pkexec)`
 ==========================================
 
 OLD Errors  
