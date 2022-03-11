@@ -27,7 +27,7 @@ git clone git@github.com:b-it-bots/mas_industrial_robotics.git
 
 -----
 
-# 2. Done
+# 2. Done ✅ [pull request approved]
 
 #### Error:
 
@@ -171,7 +171,7 @@ In file `catkin_ws/src/youbot_driver_ros_interface/CMakeLists.txt`, change line 
 
 -----
 
-# 8. Done
+# 8. Done ✅ [pull request approved]
 
 #### Error:
 
@@ -189,7 +189,7 @@ Reference: NA
 
 - In the file `catkin_ws/src/lama_planner/Makefile.tarball`, change line number #12, to `python3 fast-downward/build.py`
 
-# 9. Done
+# 9. Done ✅ [pull request approved]
 
 #### Error:
 
