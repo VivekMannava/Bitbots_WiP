@@ -121,7 +121,7 @@ In files
 
 -----
 
-# 6. On Hold
+# 6. Done (change to python_orocos official git repo instead of b-it-bit)
 
 #### Error:
 
