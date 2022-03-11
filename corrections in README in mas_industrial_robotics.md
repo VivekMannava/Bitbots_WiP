@@ -189,7 +189,7 @@ Reference: NA
 
 - In the file `catkin_ws/src/lama_planner/Makefile.tarball`, change line number #12, to `python3 fast-downward/build.py`
 
-# 9.
+# 9. Done
 
 #### Error:
 
