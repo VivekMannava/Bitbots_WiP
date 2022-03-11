@@ -57,7 +57,7 @@ change the last line from
 ```
 -----
 
-# 3. Skipped
+# 3. Done (created issue on  b-it-bots/mas_industrial_robotics git repo)
 
 #### Error:
 
