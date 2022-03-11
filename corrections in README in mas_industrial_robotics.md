@@ -27,7 +27,7 @@ git clone git@github.com:b-it-bots/mas_industrial_robotics.git
 
 -----
 
-# 2. IN progress
+# 2. Done
 
 #### Error:
 
