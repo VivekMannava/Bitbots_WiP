@@ -1,4 +1,4 @@
-# 1.
+# 1. TODO: update readme.md file using/with ssh [Link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 #### Error: 
 
@@ -27,7 +27,7 @@ git clone git@github.com:b-it-bots/mas_industrial_robotics.git
 
 -----
 
-# 2.
+# 2. IN progress
 
 #### Error:
 
@@ -57,7 +57,7 @@ change the last line from
 ```
 -----
 
-# 3. 
+# 3. Skipped
 
 #### Error:
 
@@ -79,7 +79,7 @@ to
 
 -----
 
-# 4.
+# 4.Done
 
 #### Error:
 
@@ -96,7 +96,7 @@ Reference: [Link](https://github.com/PointCloudLibrary/pcl/issues/2968)
 
 -----
 
-# 5.
+# 5. Done
 
 #### Error:
 
@@ -121,7 +121,7 @@ In files
 
 -----
 
-# 6.
+# 6. On Hold
 
 #### Error:
 
@@ -150,7 +150,7 @@ Reference: [python-orocos-kdl github repo link](https://github.com/orocos/orocos
 
 -----
 
-# 7.
+# 7. Done
 
 #### Error:
 
@@ -171,7 +171,7 @@ In file `catkin_ws/src/youbot_driver_ros_interface/CMakeLists.txt`, change line 
 
 -----
 
-# 8.
+# 8. Done
 
 #### Error:
 
