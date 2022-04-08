@@ -41,3 +41,11 @@
 3. Visualise it in rviz by subscriping to "Laserscan"-topic:"/barrier_tape/scan_<front/back>" and "Image"-topic:"mir_perception/<front/back>_camera/barrier_tape_detection/debug_image"
 
 
+# Whole body motion calculator
+
+1. run bringup - "roslaunch mir_bringup robot.launch
+2. launch planning pringup - `roslaunch mir_planning_bringup robot.launch`
+3. To set base_link_static run - `rostopic pub /static_transform_publisher_node/event_in std_msgs/String "data: 'e_start'"`
+4. launch pose mock up gui in your pc : `roslaunch mir_pregrasp_planning pose_mock_up_gui.launch`
+5. In robot publish pregrasp_planner event in - `rostopic pub /pregrasp_planner_node/event_in std_msgs/String "data: 'e_start'"`
+6. Then publish whole body motion controller event in to move - `rostopic pub /wbc/event_in std_msgs/String "data: 'e_start'"`
