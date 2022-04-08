@@ -8,3 +8,10 @@
 7. In robot run the command - `rostopic pub /pregrasp_planner_node/event_in std_msgs/String "data: 'e_start'" -1`
 8. In robot run the command - `rostopic pub /waypoint_trajectory_generation/event_in std_msgs/String "data: 'e_start'" -1`
 9. If it shows error as "unable to transform to base_link" then run `rostopic pub /static_transform_publisher_node/event_in std_msgs/String "data: 'e_start'"`
+
+## To source everything on opening a terminal
+
+1. open ~/.bashrc - `nano ~/.bashrc`
+2. In the bashrc file add `source <path of catkinws from home>`
+3. In bashrc, To export ros_master - `export ROS_MASTER_URI=http://<ip_address:port>
+4. To add ssh for robot - `alias <any_name>="ssh robocup@<ip_address>
