@@ -33,3 +33,11 @@
 7. In robot run the command - `rostopic pub /pregrasp_planner_node/event_in std_msgs/String "data: 'e_start'" -1`
 8. In robot run the command - `rostopic pub /waypoint_trajectory_generation/event_in std_msgs/String "data: 'e_start'" -1`
 9. If it shows error as "unable to transform to base_link" then run `rostopic pub /static_transform_publisher_node/event_in std_msgs/String "data: 'e_start'"`
+
+
+## Barrier tape detection
+1. Run `roslaunch mir_planning_bringup robot.launch`
+2. Run `rostopic pub /mir_perception/barrier_tape_detection/event_in std_msgs/String "data: 'e_start'"` , instead of "e_start", try "e_reset" ,"e_stop"
+3. Visualise it in rviz by subscriping to "Laserscan"-topic:"/barrier_tape/scan_<front/back>" and "Image"-topic:"mir_perception/<front/back>_camera/barrier_tape_detection/debug_image"
+
+
