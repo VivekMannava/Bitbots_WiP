@@ -1,3 +1,18 @@
+# Initial setup
+
+## To source everything on opening a terminal
+
+1. open ~/.bashrc - `nano ~/.bashrc`
+2. In the bashrc file add `source <path of catkinws from home>`
+3. Make sure your pc is connected to `b-it-bots` wifi
+4. In bashrc, To export ros_master - `export ROS_MASTER_URI=http://<ip_address:port>`
+5. To add ssh for robot - `alias <any_name>="ssh robocup@<ip_address>`
+6. After adding the above line, save and source the bashrc - `source ~/.bashrc`
+7. In your pc open /etc/hosts - `nano /etc/hosts
+8. Add the ip address of robot and its name
+9. In the robot open /etc/hosts - `nano /etc/hosts`
+10. Add the ip address of your pc and its name
+
 # To control manipulator
 
 1. Login to the robot using ssh : `ssh robocup@<ip_address>` and enter password
@@ -18,10 +33,3 @@
 7. In robot run the command - `rostopic pub /pregrasp_planner_node/event_in std_msgs/String "data: 'e_start'" -1`
 8. In robot run the command - `rostopic pub /waypoint_trajectory_generation/event_in std_msgs/String "data: 'e_start'" -1`
 9. If it shows error as "unable to transform to base_link" then run `rostopic pub /static_transform_publisher_node/event_in std_msgs/String "data: 'e_start'"`
-
-## To source everything on opening a terminal
-
-1. open ~/.bashrc - `nano ~/.bashrc`
-2. In the bashrc file add `source <path of catkinws from home>`
-3. In bashrc, To export ros_master - `export ROS_MASTER_URI=http://<ip_address:port>`
-4. To add ssh for robot - `alias <any_name>="ssh robocup@<ip_address>`
